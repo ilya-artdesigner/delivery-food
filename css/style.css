@@ -94,7 +94,7 @@ main:first-of-type {
   display: block;
   margin-top: 2.2rem;
   height: 16.6rem;
-  background: #fff1b8 url("/img/banner.png") no-repeat center right -200px / 800px;
+  background: #fff1b8 url("../img/banner.png") no-repeat center right -200px / 800px;
   color: #302c34;
   border-radius: 0.5rem;
 }
