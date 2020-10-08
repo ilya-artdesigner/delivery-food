@@ -4,6 +4,7 @@
 
 .body {
   font-size: 18px;
+  font-family: "Roboto", sans-serif;
 }
 
 .menu {
@@ -72,4 +73,49 @@
 
 .icon {
   padding-right: 4px;
+}
+
+.promo {
+  display: block;
+  margin-top: 2.2rem;
+  width: auto;
+  height: 16.6rem;
+  background: #fff1b8 url("/img/banner.png") no-repeat center right -200px / 800px;
+  color: #302c34;
+  border-radius: 0.5rem;
+}
+
+.descr {
+  padding: 3.7rem 0 3.7rem 3.8rem;
+}
+
+.descr h1 {
+  font-size: 2.1rem;
+  margin-bottom: 0.8rem;
+  font-weight: 700;
+  line-height: 2.5rem;
+  width: 24rem;
+}
+
+.descr span {
+  font-size: 1.3rem;
+  line-height: 1.5rem;
+  font-weight: 400;
+}
+
+.restaurants {
+  margin-top: 3.1rem;
+}
+
+.restaurants h1 {
+  font-size: 3.1rem;
+  font-weight: 700;
+  color: #120706;
+}
+
+.goods-search {
+  width: 17rem;
+  background: url("../img/search.svg") left 11px center no-repeat;
+  font-size: 0.8rem;
+  height: 1.8rem;
 }
