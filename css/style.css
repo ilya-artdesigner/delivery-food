@@ -11,9 +11,7 @@
   margin-top: 2.4rem;
 }
 
-.input-search {
-  height: 40px;
-  width: 690px;
+.input {
   color: #bfbfbf;
   background: #ffffff;
   border: 1px solid #d9d9d9;
@@ -23,6 +21,11 @@
   line-height: 24px;
   padding-left: 32px;
   padding-right: 12px;
+}
+
+.input-address {
+  height: 40px;
+  width: 690px;
   background: url("../img/home.svg") left 11px center no-repeat;
 }
 
@@ -32,7 +35,7 @@
   align-items: center;
 }
 
-.input-search:focus {
+.input:focus {
   color: #343a40;
   box-shadow: none;
   border-color: #d9d9d9;
@@ -85,11 +88,11 @@
   border-radius: 0.5rem;
 }
 
-.descr {
+.promo-text {
   padding: 3.7rem 0 3.7rem 3.8rem;
 }
 
-.descr h1 {
+.promo-text h1 {
   font-size: 2.1rem;
   margin-bottom: 0.8rem;
   font-weight: 700;
@@ -97,10 +100,11 @@
   width: 24rem;
 }
 
-.descr span {
+.promo-text p {
   font-size: 1.3rem;
   line-height: 1.5rem;
   font-weight: 400;
+  width: 27rem;
 }
 
 .restaurants {
@@ -113,7 +117,7 @@
   color: #120706;
 }
 
-.goods-search {
+.input-goods {
   width: 17rem;
   background: url("../img/search.svg") left 11px center no-repeat;
   font-size: 0.8rem;
