@@ -403,14 +403,14 @@ ul {
   }
 }
 
-@media screen and (max-width: 360px) {
+@media screen and (max-width: 380px) {
   .promo-text {
-    padding: 4.4rem 0;
+    padding: 4.4rem 1.5rem;
   }
   .promo-text h1 {
-    font-size: 1.5rem;
+    font-size: 1.6rem;
     line-height: 1.9rem;
-    width: 16rem;
+    width: 18rem;
   }
   .promo-text p {
     font-size: 1rem;
@@ -421,5 +421,11 @@ ul {
     flex-wrap: wrap;
     flex-basis: 60%;
     margin-bottom: 8px;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .promo-text {
+    padding: 4.4rem 0.6rem;
   }
 }
