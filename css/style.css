@@ -426,17 +426,11 @@ ul {
 
 @media screen and (max-width: 360px) {
   .promo-text {
-    padding: 4.4rem 0.3rem;
+    padding: 4.4rem 1.1rem;
   }
   .promo-text h1 {
     font-size: 1.5rem;
     line-height: 1.9rem;
     width: 16rem;
-  }
-}
-
-@media screen and (max-width: 320px) {
-  .promo-text {
-    padding: 4.4rem 1.1rem;
   }
 }
