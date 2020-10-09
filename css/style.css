@@ -18,19 +18,19 @@ p {
 .input {
   color: #bfbfbf;
   background: #ffffff;
-  border: 1px solid #d9d9d9;
+  border: 0.06rem solid #d9d9d9;
   box-sizing: border-box;
-  border-radius: 2px;
-  font-size: 16px;
-  line-height: 24px;
-  padding-left: 32px;
-  padding-right: 12px;
+  border-radius: 0.12rem;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  padding-left: 2rem;
+  padding-right: 0.75rem;
 }
 
 .input-address {
-  height: 40px;
-  width: 690px;
-  background: url("../img/home.svg") left 11px center no-repeat;
+  height: 2.5rem;
+  flex: 0.8;
+  background: url("../img/home.svg") left 0.68rem center no-repeat;
 }
 
 .btn {
@@ -46,8 +46,8 @@ p {
 }
 
 .btn-primary {
-  width: 96px;
-  height: 40px;
+  width: 6rem;
+  height: 2.5rem;
   background-color: #1890ff;
   border-color: #1890ff;
 }
@@ -64,8 +64,8 @@ p {
 .btn-outline-secondary {
   border-color: #d9d9d9;
   background-color: inherit;
-  width: 113px;
-  height: 40px;
+  width: 7rem;
+  height: 2.5rem;
   color: #595959;
 }
 
@@ -87,14 +87,15 @@ main:first-of-type {
 }
 
 .icon {
-  padding-right: 4px;
+  padding-right: 0.25rem;
 }
 
 .promo {
   display: block;
   margin-top: 2.2rem;
   height: 16.6rem;
-  background: #fff1b8 url("../img/banner.png") no-repeat center right -200px / 800px;
+  background: #fff1b8 url("../img/banner.png") no-repeat center right -12.5rem /
+    45rem;
   color: #302c34;
   border-radius: 0.5rem;
 }
@@ -120,6 +121,7 @@ main:first-of-type {
 
 .restaurants {
   margin-top: 3.1rem;
+  margin-bottom: 2.6rem;
 }
 
 .restaurants h1 {
@@ -130,23 +132,28 @@ main:first-of-type {
 
 .input-goods {
   width: 17rem;
-  background: url("../img/search.svg") left 11px center no-repeat;
+  background: url("../img/search.svg") left 0.68rem center no-repeat;
   font-size: 0.8rem;
   height: 1.8rem;
 }
 
 .item-card {
-  width: 21.3rem;
-  height: 21rem;
+  flex-basis: 30.7%;
   background: #ffffff;
-  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.05);
-  border-radius: 7px;
+  box-shadow: 0rem 0.25rem 0.75rem rgba(0, 0, 0, 0.05);
+  border-radius: 0.43rem;
   margin-bottom: 1.6rem;
   overflow: hidden;
 }
 
+@media screen and (max-width: 992px) {
+  .item-card {
+    flex-basis: 48%;
+  }
+}
+
 .item-card img {
-  width: 21.3rem;
+  width: 100%;
   height: auto;
   object-fit: cover;
 }
@@ -172,15 +179,15 @@ main:first-of-type {
   font-size: 0.6rem;
   line-height: 1.1rem;
   background: #262626;
-  border-radius: 2px;
+  border-radius: 0.12rem;
   color: #ffffff;
 }
 
 .price::after {
   display: inline-block;
   content: "";
-  width: 5px;
-  height: 5px;
+  width: 0.3rem;
+  height: 0.3rem;
   border-radius: 50%;
   margin-right: 0.5rem;
   margin-left: 0.5rem;
@@ -191,11 +198,228 @@ main:first-of-type {
 .item-card .rating {
   color: #ffc107;
   font-weight: 700;
-  margin-right: 24px;
+  margin-right: 1.5rem;
 }
 
 .item-card .rating img {
   width: 0.7rem;
   height: 0.7rem;
   margin-right: 0.3rem;
+}
+
+.category {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+footer {
+  padding: 3.7rem 0;
+}
+
+.nav-links li {
+  list-style-type: none;
+}
+
+.nav-links li:not(:last-child) {
+  margin-right: 0.9rem;
+}
+
+.nav-link,
+.social a {
+  color: #8e8e8e;
+}
+
+ul {
+  margin: 0;
+}
+
+.nav-link:hover,
+.social a:hover {
+  color: #595959;
+}
+
+.social a > i {
+  font-size: 1.5rem;
+}
+
+.social a {
+  margin-left: 1.3rem;
+}
+
+.nav-link {
+  padding: 0;
+}
+
+@media screen and (max-width: 1200px) {
+  .promo {
+    background: #fff1b8 url("../img/banner.png") no-repeat center right -12.5rem /
+      40rem;
+  }
+}
+
+@media screen and (max-width: 960px) {
+  .promo {
+    background: #fff1b8 url("../img/banner.png") no-repeat center right -12.5rem /
+      32rem;
+  }
+}
+
+@media screen and (max-width: 868px) {
+  .promo {
+    background: #fff1b8 url("../img/banner.png") no-repeat top -7rem right -12.5rem /
+      28rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .promo {
+    background: #fff1b8 url("../img/banner.png") no-repeat top -7rem right -12.5rem /
+      24.5rem;
+  }
+  .promo-text {
+    padding: 3.7rem 0 3.7rem 1.8rem;
+  }
+
+  .promo-text p {
+    font-size: 1rem;
+    line-height: 1.4rem;
+    width: 22rem;
+  }
+
+  .promo-text h1 {
+    font-size: 1.9rem;
+    margin-bottom: 0.6rem;
+    line-height: 2.5rem;
+    width: 23rem;
+  }
+}
+
+@media screen and (max-width: 668px) {
+  .input-address {
+    order: 3;
+    flex: 100%;
+    margin-top: 1.5rem;
+  }
+  .rating {
+    flex-basis: 100%;
+  }
+  .restaurants h1 {
+    font-size: 1.6rem;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .input {
+    height: 2.5rem;
+  }
+  .promo {
+    background-image: none;
+  }
+  .promo-text {
+    padding: 3.7rem;
+  }
+  .footer-nav {
+    flex: 100%;
+    margin-bottom: 1rem;
+  }
+  footer .logo {
+    flex: 1;
+    margin-left: 2rem;
+  }
+  .nav-links {
+    flex-wrap: wrap;
+    flex-basis: 70%;
+  }
+  .nav-links li:not(:last-child) {
+    margin-right: 1.9rem;
+    margin-bottom: 0.5rem;
+  }
+  .social {
+    margin-left: 2rem;
+  }
+  .social a:first-child {
+    margin-left: 0;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .btn-caption {
+    display: none;
+  }
+  .btn {
+    width: 3rem;
+  }
+  .icon {
+    padding: 0;
+    margin: 0 auto;
+  }
+  .item-card {
+    flex: 100%;
+    margin-bottom: 2.5rem;
+  }
+  .item-card img {
+    height: 16rem;
+  }
+  .promo-text {
+    padding: 4.4rem 2.4rem;
+  }
+  .promo-text h1 {
+    font-size: 1.9rem;
+    line-height: 2.5rem;
+    width: 23rem;
+  }
+  .promo-text p {
+    font-size: 1rem;
+    line-height: 1.4rem;
+    width: 22rem;
+  }
+  .restaurants h1 {
+    font-size: 1.6rem;
+    flex: 100%;
+    margin-bottom: 1.2rem;
+  }
+  .input-goods {
+    flex: 100%;
+    font-size: 0.9rem;
+  }
+  .time-box {
+    width: 3.6rem;
+    height: 1.5rem;
+    font-size: 0.7rem;
+    line-height: 1.4rem;
+    background: #262626;
+    border-radius: 0.12rem;
+    color: #ffffff;
+  }
+  footer .logo {
+    flex: 100%;
+    margin-bottom: 16px;
+  }
+  .nav-links {
+    flex-wrap: wrap;
+    flex-basis: 50%;
+    margin-bottom: 8px;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .promo-text {
+    padding: 4.4rem 0;
+  }
+  .promo-text h1 {
+    font-size: 1.5rem;
+    line-height: 1.9rem;
+    width: 16rem;
+  }
+  .promo-text p {
+    font-size: 1rem;
+    line-height: 1.4rem;
+    width: 16rem;
+  }
+  .nav-links {
+    flex-wrap: wrap;
+    flex-basis: 60%;
+    margin-bottom: 8px;
+  }
 }
