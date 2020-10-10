@@ -277,9 +277,12 @@ ul {
 }
 
 .item-card .good-name {
-  flex: 40%;
+  width: 16rem;
   font-weight: 400;
   margin-bottom: 0.6rem;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
 }
 
 .good-descr {
