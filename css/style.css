@@ -277,12 +277,11 @@ ul {
 }
 
 .item-card .good-name {
+  display: flex;
   width: 16rem;
   font-weight: 400;
   margin-bottom: 0.6rem;
-  text-overflow: ellipsis;
-  overflow: hidden;
-  white-space: nowrap;
+  flex-wrap: wrap;
 }
 
 .good-descr {
@@ -297,6 +296,117 @@ ul {
 .goods-info .icon {
   padding-left: 0.25rem;
   padding-right: 0;
+}
+
+.modal-cart {
+  display: none;
+}
+
+.modal {
+  display: flex;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.4);
+}
+
+.active {
+  display: block;
+}
+
+.modal-dialog {
+  margin: auto;
+  max-width: 48.7rem;
+  width: 95%;
+  min-height: 34.5rem;
+  background: #fff;
+  border-radius: 0.3rem;
+}
+
+.modal-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+.modal-body .btn {
+  margin-left: 0;
+}
+
+.modal-body .item-name {
+  flex: 90%;
+}
+
+.modal-body .item-price {
+  margin-right: 2.6rem;
+  font-size: 1.15rem;
+  font-weight: 700;
+  flex: 20%;
+}
+
+.modal-body .btn-outline-primary {
+  font-size: 0.8rem;
+  height: 2rem;
+}
+
+.modal-body .btn-outline-primary:focus {
+  box-shadow: none;
+}
+
+.modal-body .good-item {
+  padding-bottom: 0.6rem;
+}
+
+.item-number {
+  margin: 0 0.8rem 0 0.8rem;
+}
+
+.modal-body {
+  margin-bottom: 3.25rem;
+}
+
+.modal-body .good-item {
+  border-bottom: 1px solid #dee2e6;
+  height: 2.6rem;
+}
+
+.modal-body .good-item:not(:first-child) {
+  margin-top: 0.83rem;
+}
+
+.modal-content {
+  padding: 2.5rem 2.8rem;
+}
+
+.modal-footer,
+.modal-header {
+  border: none;
+}
+
+.modal-footer .btn-primary {
+  width: 9.3rem;
+}
+
+.modal-footer .btn-outline-secondary {
+  width: initial;
+}
+
+.modal-content {
+  border: none;
+}
+
+.cart-sum {
+  width: 6.6rem;
+  height: 2.94rem;
+  background-color: #120706;
+  color: #fff;
+  padding: 0.37rem 0.75rem;
+  border-radius: 0.25rem;
+}
+
+.cart-sum .sum {
+  font-size: 1rem;
+  font-weight: 700;
 }
 
 @media screen and (max-width: 1200px) {

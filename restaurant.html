@@ -25,7 +25,7 @@
       src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
       defer
     ></script>
-
+    <script src="js/cart.js" defer></script>
     <title>Delivery food - доставка еды на дом</title>
   </head>
   <body>
@@ -55,7 +55,7 @@
                 <button class="btn btn-primary">
                   <img src="./img/user.svg" alt="user-icon" class="icon" /><span class="btn-caption">Войти</span>
                 </button>
-                <button class="btn btn-outline-secondary">
+                <button class="btn btn-outline-secondary" id="cart">
                   <img
                     src="./img/cart.svg"
                     alt="cart-icon"
@@ -205,6 +205,72 @@
           </div>
         </div>
       </footer>
+      <section class="modal-cart">
+        <div class="modal" tabindex="-1">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title">Корзина</h5>
+                <button type="button" class="close">&times;</button>
+              </div>
+              <div class="modal-body">
+                <section class="d-flex justify-content-between align-items-center good-item">
+                  <span class="item-name">Ролл угорь стандарт</span>
+                  <span class="item-price">250 ₽</span>
+                  <div class="d-flex justify-content-between align-items-center counter">
+                    <button class="btn btn-outline-primary">&#8722;</button>
+                    <span class="item-number">1</span>
+                    <button class="btn btn-outline-primary">&#43;</button>
+                  </div>
+                </section>
+                <section class="d-flex justify-content-between align-items-center good-item">
+                  <span class="item-name">Ролл угорь стандарт</span>
+                  <span class="item-price">250 ₽</span>
+                  <div class="d-flex justify-content-between align-items-center counter">
+                    <button class="btn btn-outline-primary">&#8722;</button>
+                    <span class="item-number">1</span>
+                    <button class="btn btn-outline-primary">&#43;</button>
+                  </div>
+                </section>
+                <section class="d-flex justify-content-between align-items-center good-item">
+                  <span class="item-name">Ролл угорь стандарт</span>
+                  <span class="item-price">250 ₽</span>
+                  <div class="d-flex justify-content-between align-items-center counter">
+                    <button class="btn btn-outline-primary">&#8722;</button>
+                    <span class="item-number">1</span>
+                    <button class="btn btn-outline-primary">&#43;</button>
+                  </div>
+                </section>
+                <section class="d-flex justify-content-between align-items-center good-item">
+                  <span class="item-name">Ролл угорь стандарт</span>
+                  <span class="item-price">250 ₽</span>
+                  <div class="d-flex justify-content-between align-items-center counter">
+                    <button class="btn btn-outline-primary">&#8722;</button>
+                    <span class="item-number">1</span>
+                    <button class="btn btn-outline-primary">&#43;</button>
+                  </div>
+                </section>
+                <section class="d-flex justify-content-between align-items-center good-item">
+                  <span class="item-name">Ролл угорь стандарт</span>
+                  <span class="item-price">250 ₽</span>
+                  <div class="d-flex justify-content-between align-items-center counter">
+                    <button class="btn btn-outline-primary">&#8722;</button>
+                    <span class="item-number">1</span>
+                    <button class="btn btn-outline-primary">&#43;</button>
+                  </div>
+                </section>
+              </div>
+              <div class="modal-footer d-flex justify-content-between align-items">
+                <span class="time-box d-flex justify-content-center align-items-center cart-sum"><span class="sum">1255 ₽</span></span>
+                <section class="d-flex justify-content-between buttons">
+                  <button class="btn btn-primary">Оформить заказ</button>
+                  <button class="btn btn-outline-secondary" id="cancel">Отмена</button>
+                </section>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </article>
   </body>
 </html>
