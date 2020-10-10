@@ -277,12 +277,11 @@ ul {
 }
 
 .item-card .good-name {
+  display: flex;
   width: 16rem;
   font-weight: 400;
   margin-bottom: 0.6rem;
-  text-overflow: ellipsis;
-  overflow: hidden;
-  white-space: nowrap;
+  flex-wrap: wrap;
 }
 
 .good-descr {
@@ -334,10 +333,15 @@ ul {
   margin-left: 0;
 }
 
+.modal-body .item-name {
+  flex: 90%;
+}
+
 .modal-body .item-price {
   margin-right: 2.6rem;
   font-size: 1.15rem;
   font-weight: 700;
+  flex: 20%;
 }
 
 .modal-body .btn-outline-primary {
@@ -349,12 +353,12 @@ ul {
   box-shadow: none;
 }
 
-.modal-body .counter {
-  margin-bottom: 0.6rem;
+.modal-body .good-item {
+  padding-bottom: 0.6rem;
 }
 
 .item-number {
-  margin: 0 13px 0 13px;
+  margin: 0 0.8rem 0 0.8rem;
 }
 
 .modal-body {
