@@ -266,7 +266,7 @@ ul {
 }
 
 .goods-info .btn {
-  width: 7.75rem;
+  width: 8rem;
   margin-left: 0;
 }
 
@@ -283,13 +283,17 @@ ul {
 }
 
 .good-descr {
-  flex: 100%;
+  width: 14rem;
   margin-bottom: 1.5rem;
   line-height: 1.3rem;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
 }
 
 .goods-info .icon {
   padding-left: 0.25rem;
+  padding-right: 0;
 }
 
 @media screen and (max-width: 1200px) {
