@@ -299,7 +299,7 @@ ul {
 }
 
 .modal-cart {
-  display: none;
+  display: block;
 }
 
 .modal {
@@ -312,9 +312,9 @@ ul {
   background: rgba(0, 0, 0, 0.4);
 }
 
-.active {
+/* .active {
   display: block;
-}
+} */
 
 .modal-dialog {
   margin: auto;
