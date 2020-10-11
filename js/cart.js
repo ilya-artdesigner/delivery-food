@@ -2,6 +2,7 @@
 
 const modalSection = document.querySelector('.modal-cart');
 const cart = document.querySelector('#cart');
+const body = document.querySelector('body');
 
 const cartModal = () => {
   modalSection.textContent = '';
@@ -62,7 +63,7 @@ const cartModal = () => {
             </section>
           </div>
           <div class="modal-footer d-flex justify-content-between align-items">
-            <span class="time-box d-flex justify-content-center align-items-center cart-sum"><span class="sum">1255 ₽</span></span>
+            <span class="d-flex justify-content-center align-items-center cart-sum"><span class="sum">1255 ₽</span></span>
             <section class="d-flex justify-content-between buttons">
               <button class="btn btn-primary">Оформить заказ</button>
               <button class="btn btn-outline-secondary" id="cancel">Отмена</button>
@@ -79,6 +80,7 @@ cart.addEventListener('click', () => {
   
   if (cart) {
       cartModal();
+      body.classList.add('fixed');
   }
 
 });
@@ -91,6 +93,7 @@ modalSection.addEventListener('click', (event) => {
 
   if (closer || cancel) {
     modalSection.textContent = '';
+    body.classList.remove('fixed');
   }
   
 });
